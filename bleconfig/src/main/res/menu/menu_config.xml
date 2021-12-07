@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <item android:id="@+id/ble_connect" android:title="连接蓝牙" android:visible="true" app:showAsAction="always"></item>
+    <item android:id="@+id/reset_config" android:title="重置配置参数" android:visible="true"></item>
+    <item android:id="@+id/reset_info" android:title="重置设备信息" android:visible="true"></item>
+    <item android:id="@+id/reset_chip" android:title="复位芯片" android:visible="true" ></item>
+</menu>

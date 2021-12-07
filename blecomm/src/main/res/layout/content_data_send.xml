@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/padding_layout_2"
+    android:paddingEnd="@dimen/padding_layout_2"
+    android:paddingTop="1dp"
+    android:paddingBottom="1dp"
+    android:id="@+id/ll_send"
+    >
+
+    <LinearLayout
+        android:id="@+id/write_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+       <!-- <LinearLayout
+            android:id="@+id/linerLayout_interval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_layout_1"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/send_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    />
+                <EditText
+                    android:id="@+id/send_interval"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:maxLines="1"
+
+                    android:gravity="center"
+                    android:hint="@string/interval_default"
+                    />
+                <TextView
+                    android:text="@string/interval_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    />
+            </LinearLayout>
+        </LinearLayout>-->
+        <LinearLayout
+            android:id="@+id/linerLayout_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_layout_1"
+            android:visibility="gone"
+            >
+
+            <EditText
+                android:id="@+id/send_data"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/tv_round"
+                android:gravity="start|top"
+                android:hint="@string/send_hint"
+                android:text="1234567890"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_layout_1"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:id="@+id/progress_value"
+                    android:text="0%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            >
+
+            <TextView
+                android:id="@+id/toggle_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/format"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:visibility="gone"
+                />
+            <com.suke.widget.SwitchButton
+                android:id="@+id/send_hex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:checked="true"
+                android:text=""
+                android:textOff=""
+                android:textOn=""
+                android:visibility="gone"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:sb_checked_color="@color/colorPrimary"
+                />
+
+            <!-- <TextView
+                android:id="@+id/send_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:gravity="start"
+                android:text="单次发送"
+                />
+                -->
+
+            <Button
+                android:id="@+id/send_set"
+                android:layout_width="20dp"
+                android:layout_height="@dimen/height_btn_data_30"
+                android:layout_gravity="center|end"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/rcvsnd_btn"
+                android:enabled="false"
+                android:text="@string/btn_set_send"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/clear_write"
+                android:layout_width="60dp"
+                android:layout_height="@dimen/height_btn"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Clear"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_round"
+                style="?android:attr/borderlessButtonStyle"
+                android:enabled="false"
+                android:visibility="gone"
+                />
+
+
+            <Button
+                android:id="@+id/write"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="20dp"
+                android:layout_height="@dimen/height_btn"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/rcvsnd_btn"
+                android:enabled="false"
+                android:text="@string/send"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp" />
+
+
+            <Button
+                android:id="@+id/clear_receive"
+                android:layout_width="20dp"
+                android:layout_height="@dimen/height_btn_data_30"
+                android:layout_gravity="center|end"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/rcvsnd_btn"
+                android:enabled="false"
+                android:text="@string/clear"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp" />
+
+
+            <Button
+                android:id="@+id/receive_set"
+                android:layout_width="20dp"
+                android:layout_height="@dimen/height_btn_data_30"
+                android:layout_gravity="center|end"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/rcvsnd_btn"
+                android:enabled="false"
+                android:text="@string/btn_set_receive"
+                android:textColor="@color/colorWhite"
+
+                android:textSize="10sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/receive_share_data"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="20dp"
+                android:layout_height="@dimen/height_btn"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/rcvsnd_btn"
+                android:enabled="false"
+                android:text="@string/share_data"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

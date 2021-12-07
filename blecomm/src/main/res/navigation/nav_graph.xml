@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ReceiveMsg">
+
+    <fragment
+        android:id = "@+id/ReceiveMsg"
+        android:name = "cn.wch.blecomm.ReceiveMsgFragment"
+        android:label = "ReceiveMsg_Fragment"
+        tools:layout = "@layout/fragment_receivemsg"
+        >
+        <action
+            android:id="@+id/action_ReceiveMsg_to_RealTimeInfoFragment"
+            app:destination="@id/RealTimeInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/RealTimeInfoFragment"
+        android:name="cn.wch.blecomm.RealTimeInfoFragment"
+        android:label="@string/RealTimeInfo_fragment_label"
+        tools:layout="@layout/fragment_realtimeinfo">
+        <action
+            android:id="@+id/action_RealTimeInfoFragment_to_FaultInfoFragment"
+            app:destination="@id/FaultInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FaultInfoFragment"
+        android:name="cn.wch.blecomm.FaultInfoFragment"
+        android:label="@string/FaultInfo_fragment_label"
+        tools:layout="@layout/fragment_faultinfo">
+        <action
+            android:id="@+id/action_FaultInfoFragment_to_ProtectionInfoFragment"
+            app:destination="@id/ProtectionInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ProtectionInfoFragment"
+        android:name="cn.wch.blecomm.ProtectionInfoFragment"
+        android:label="@string/ProtectionInfo_fragment_label"
+        tools:layout="@layout/fragment_protectioninfo">
+        <action
+            android:id="@+id/action_ProtectionInfoFragment_to_FWUpdateFragment"
+            app:destination="@id/FWUpdateFragment" />
+    </fragment>
+    <fragment
+        android:id = "@+id/FWUpdateFragment"
+        android:name = "cn.wch.blecomm.FWUpdateFragment"
+        android:label = "FWUpdate_Fragment"
+        tools:layout="@layout/fragment_fwupdate"
+        >
+
+        <action
+            android:id="@+id/action_FWUpdateFragment_to_ReceiveMsg"
+            app:destination="@id/ReceiveMsg" />
+    </fragment>
+</navigation>

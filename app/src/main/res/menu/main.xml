@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/startScan"
+        android:visible="true"
+        android:title="Scan BLE"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/stopScan"
+        android:visible="false"
+        android:title="Stop Scanning"
+        android:orderInCategory="102"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/indicator"
+        android:title=""
+        android:orderInCategory="101"
+        android:visible="false"
+        app:showAsAction="always"
+        />
+</menu>

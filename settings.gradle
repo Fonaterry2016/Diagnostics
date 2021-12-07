@@ -1,0 +1,7 @@
+include ':blecomm'
+include ':bleconfig'
+include ':otaupdate'
+include ':ui'
+include ':blelib'
+include ':app'
+rootProject.name = "CH9141Tool"

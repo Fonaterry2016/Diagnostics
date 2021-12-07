@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">参数配置</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <string-array name="gpio_spinner">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="gpio_index">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="gpio_dir">
+        <item>IN</item>
+        <item>OUT</item>
+    </string-array>
+    <string-array name="gpio_val">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="pari_bits">
+        <item>None</item>
+        <item>Even</item>
+        <item>Odd</item>
+    </string-array>
+    <string-array name="mod_mode">
+        <item>Broadcast</item>
+        <item>Central</item>
+        <item>Peripheral</item>
+    </string-array>
+    <string-array name="mod_tpl">
+        <item>0 db</item>
+        <item>1 db</item>
+        <item>2 db</item>
+        <item>3 db</item>
+        <item>-3 db</item>
+        <item>-8 db</item>
+        <item>-14 db</item>
+        <item>-20 db</item>
+    </string-array>
+    <string-array name="low_power">
+        <item>关闭</item>
+        <item>睡眠模式</item>
+        <item>掉电模式</item>
+    </string-array>
+    <string-array name="adv_en">
+        <item>关闭</item>
+        <item>开启</item>
+    </string-array>
+    <string-array name="pw_en">
+        <item>关闭</item>
+        <item>开启</item>
+    </string-array>
+
+    <string-array name="cfg_en">
+        <item>关闭</item>
+        <item>开启</item>
+    </string-array>
+    <string-array name="adv_channel">
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>all</item>
+    </string-array>
+    <string-array name="voltage_show">
+        <item>不显示</item>
+        <item>显示</item>
+    </string-array>
+</resources>

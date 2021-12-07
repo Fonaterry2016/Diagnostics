@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_ble_comm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:text="BLE communication"
+        android:gravity="center"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@android:color/background_dark"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E6E2E2"/>
+    <TextView
+        android:id="@+id/tv_ble_config"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:text="Parameter Set"
+        android:gravity="center"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@android:color/background_dark"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E6E2E2"/>
+    <TextView
+        android:id="@+id/tv_ble_ota"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:text="Firmware Update"
+        android:gravity="center"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@android:color/background_dark"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#DAD6D6"/>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:text="Cancel"
+        android:gravity="center"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@android:color/background_dark"/>
+</LinearLayout>

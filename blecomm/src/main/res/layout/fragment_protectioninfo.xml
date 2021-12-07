@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ProtectionInfo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Protection Info"
+            android:textColor="#0EDDE1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ChgOverCur"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round"
+            android:gravity="center"
+            android:text="ChgOverCur"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/ChgCellOverVol"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round"
+            android:gravity="center"
+            android:text="ChgCellOverVol"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/ChgOverTemp"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round"
+            android:gravity="center"
+            android:text="ChgOverTemp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/ChgUnderTemp"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round"
+            android:gravity="center"
+            android:text="ChgUnderTemp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/DisChgOverCur"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round"
+            android:gravity="center"
+            android:text="DisChgOverCur"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/DisChgCellUnderVol"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round"
+            android:gravity="center"
+            android:text="DisChgCellUndVol"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+
+        <TextView
+            android:id="@+id/DisChgUnderVol"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round"
+            android:gravity="center"
+            android:text="DisChgUnderVol"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/DisChgOverTemp"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round"
+            android:gravity="center"
+            android:text="DisChgOverTemp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/DisChgUnderTemp"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round"
+            android:gravity="center"
+            android:text="DisChgUnderTemp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/FlBrushNoload"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round"
+            android:gravity="center"
+            android:text="FlBrushNoload"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+
+        <TextView
+            android:id="@+id/MainDshNoLoad"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round"
+            android:gravity="center"
+            android:text="MainDshNoLoad"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/MainBrushSCD"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round"
+            android:gravity="center"
+            android:text="MainBrushSCD"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/FlBrushSCD"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round"
+            android:gravity="center"
+            android:text="FlBrushSCD"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+
+        <TextView
+            android:id="@+id/MotorStall"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round"
+            android:gravity="center"
+            android:text="MotorStall"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/MosOverTemp"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round"
+            android:gravity="center"
+            android:text="MosOverTemp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/ChgSecOverCur"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/tv_round"
+            android:gravity="center"
+            android:text="ChgSecOverCur"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+
+
+    </LinearLayout>
+<!--
+    <Button
+        android:id="@+id/TestBtn"
+        android:layout_width="@dimen/width_btn_data_70"
+        android:layout_height="@dimen/height_btn_data_30"
+        android:layout_gravity="center"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/btn_round"
+        android:enabled="false"
+        android:text="@string/clear"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp" />
+
+        -->
+
+
+</LinearLayout>

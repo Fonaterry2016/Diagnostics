@@ -1,0 +1,1549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 模块参数 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="模块参数"
+                android:textSize="20sp"
+                android:textColor="#555555"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="模块名称:" />
+
+                    <EditText
+                        android:id="@+id/value_module_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:maxLength="20"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="模块地址:" />
+
+                    <EditText
+                        android:id="@+id/value_module_mac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="连接地址:" />
+
+                    <EditText
+                        android:id="@+id/value_conn_mac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:enabled="false"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="版本号:" />
+
+                    <EditText
+                        android:id="@+id/value_module_ver"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:digits="0123456789 "
+                        android:enabled="false"
+
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="开机语:" />
+
+                    <EditText
+                        android:id="@+id/value_hello"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:maxLength="30"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+                </TableRow>
+            </TableLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#777777"
+                />
+
+            <!-- 串口参数 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="串口参数"
+                android:textSize="20sp"
+                android:textColor="#555555"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="波特率:" />
+
+                    <EditText
+                        android:id="@+id/value_baud_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="数据位:" />
+
+                    <EditText
+                        android:id="@+id/value_data_bit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="校验位:" />
+                    <Spinner
+                        android:id="@+id/value_pari_bit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="99"
+                        android:background="#7EC0EE"
+                        android:gravity="center_horizontal|center"
+                        android:inputType="none" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="停止位:" />
+
+                    <EditText
+                        android:id="@+id/value_stop_bit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="超时:" />
+
+                    <EditText
+                        android:id="@+id/value_timeout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:inputType="number"
+                        />
+                </TableRow>
+            </TableLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#777777"
+                />
+
+            <!-- 低功耗 -->
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="低功耗"
+                android:textSize="20sp"
+                android:textColor="#555555"
+                android:textStyle="bold"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="低功耗模式:" />
+
+                    <Spinner
+                        android:id="@+id/value_low_power_mode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="99"
+                        android:background="#7EC0EE"
+                        android:gravity="center_horizontal|center"
+                        android:inputType="none" />
+                </TableRow>
+            </TableLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#777777"
+                />
+            <!-- 工作模式和发射功率 -->
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="工作模式和发射功率"
+                android:textSize="20sp"
+                android:textColor="#555555"
+                android:textStyle="bold"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#DDDDDD"
+                />
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="芯片工作模式:" />
+
+                    <Spinner
+                        android:id="@+id/value_module_mode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="99"
+                        android:background="#7EC0EE"
+                        android:gravity="center_horizontal|center"
+                        android:inputType="none" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="芯片发送功率:" />
+
+                    <Spinner
+                        android:id="@+id/value_module_tpl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="99"
+                        android:background="#7EC0EE"
+                        android:gravity="center_horizontal|center"
+                        android:inputType="none" />
+                </TableRow>
+            </TableLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#777777"
+                />
+
+            <!-- 广播参数 -->
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="广播模式参数"
+                android:textSize="20sp"
+                android:textColor="#555555"
+                android:textStyle="bold"
+                />
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="广播使能:" />
+
+                    <Spinner
+                        android:id="@+id/value_adv_en"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="99"
+                        android:background="#7EC0EE"
+                        android:gravity="center_horizontal|center"
+                        android:inputType="none" />
+                </TableRow>
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="广播时间:"
+                        android:inputType="number"
+                        />
+                    <EditText
+                        android:id="@+id/value_adv_interval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        />
+                </TableRow>
+            </TableLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#777777"
+                />
+
+            <!-- 设备模式参数 -->
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="设备模式参数"
+                android:textSize="20sp"
+                android:textColor="#555555"
+                android:textStyle="bold"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="最小连接间隔:" />
+
+                    <EditText
+                        android:id="@+id/value_conn_interval_min"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="最大连接间隔:" />
+
+                    <EditText
+                        android:id="@+id/value_conn_interval_max"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="超时时间:" />
+
+                    <EditText
+                        android:id="@+id/value_conn_timeout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="设备名称:" />
+
+                    <EditText
+                        android:id="@+id/value_peri_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:maxLength="20"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="密码使能:" />
+
+                    <Spinner
+                        android:id="@+id/value_pw_en"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="99"
+                        android:background="#7EC0EE"
+                        android:gravity="center_horizontal|center"
+                        android:inputType="none" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="密码长度:" />
+
+                    <EditText
+                        android:id="@+id/value_pw_len"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:text="6"
+                        android:enabled="false"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:inputType="number"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:maxLength="6"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="密码:" />
+
+                    <EditText
+                        android:id="@+id/value_pw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:maxLength="6"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:inputType="number"
+                        />
+                </TableRow>
+            </TableLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#777777"
+                />
+
+            <!-- 主机模式参数 -->
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="主机模式参数①"
+                android:textSize="20sp"
+                android:textColor="#555555"
+                android:textStyle="bold"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="默认连接标志:" />
+
+                    <EditText
+                        android:id="@+id/value_conn_add_flag_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:digits="1234567890abcdefABCDEF"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:maxLength="2"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="默认连接地址:" />
+
+                    <EditText
+                        android:id="@+id/value_conn_add_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="保存的密码:" />
+
+                    <EditText
+                        android:id="@+id/value_conn_pw_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:maxLength="6"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:inputType="number"
+                        />
+                </TableRow>
+            </TableLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#777777"
+                />
+
+            <!-- 主机模式参数 -->
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="主机模式参数②"
+                android:textSize="20sp"
+                android:textColor="#555555"
+                android:textStyle="bold"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="默认连接标志:" />
+
+                    <EditText
+                        android:id="@+id/value_conn_add_flag_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:digits="1234567890abcdefABCDEF"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:maxLength="2"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="默认连接地址:" />
+
+                    <EditText
+                        android:id="@+id/value_conn_add_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="保存的密码:" />
+
+                    <EditText
+                        android:id="@+id/value_conn_pw_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:maxLength="6"
+                        android:inputType="number"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+                </TableRow>
+            </TableLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#777777"
+                />
+
+            <!-- 主机模式参数 -->
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="主机模式参数③"
+                android:textSize="20sp"
+                android:textColor="#555555"
+                android:textStyle="bold"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="默认连接标志:" />
+
+                    <EditText
+                        android:id="@+id/value_conn_add_flag_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:maxLength="2"
+                        android:digits="1234567890abcdefABCDEF"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="默认连接地址:" />
+
+                    <EditText
+                        android:id="@+id/value_conn_add_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="保存的密码:" />
+
+                    <EditText
+                        android:id="@+id/value_conn_pw_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:maxLength="6"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:inputType="number"
+                        />
+                </TableRow>
+            </TableLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#777777"
+                />
+
+            <!-- 主机模式参数 -->
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="主机模式参数④"
+                android:textSize="20sp"
+                android:textColor="#555555"
+                android:textStyle="bold"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="默认连接标志:" />
+
+                    <EditText
+                        android:id="@+id/value_conn_add_flag_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:maxLength="2"
+                        android:digits="1234567890abcdefABCDEF"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="默认连接地址:" />
+
+                    <EditText
+                        android:id="@+id/value_conn_add_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="保存的密码:" />
+
+                    <EditText
+                        android:id="@+id/value_conn_pw_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:hint=""
+                        android:maxLength="6"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:inputType="number"
+                        />
+                </TableRow>
+            </TableLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#777777"
+                />
+
+            <!-- GPIO参数 -->
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="GPIO参数"
+                android:textSize="20sp"
+                android:textColor="#555555"
+                android:textStyle="bold"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="GPIO编号:" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="7"
+                            android:textColor="#000000"
+                            android:gravity="center_horizontal|center" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="6"
+                            android:textColor="#000000"
+                            android:gravity="center_horizontal|center" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="5"
+                            android:textColor="#000000"
+                            android:gravity="center_horizontal|center" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="4"
+                            android:textColor="#000000"
+                            android:gravity="center_horizontal|center" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="3"
+                            android:textColor="#000000"
+                            android:gravity="center_horizontal|center" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="2"
+                            android:textColor="#000000"
+                            android:gravity="center_horizontal|center" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textColor="#000000"
+                            android:gravity="center_horizontal|center" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="0"
+                            android:textColor="#000000"
+                            android:gravity="center_horizontal|center" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="GPIO模式:" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99" >
+
+                        <Spinner
+                            android:id="@+id/value_gpio_mode_7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#7EC0EE"
+                            android:gravity="center_horizontal|center"
+                            android:inputType="none" />
+                        <Spinner
+                            android:id="@+id/value_gpio_mode_6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#7EC0EE"
+                            android:gravity="center_horizontal|center"
+                            android:inputType="none" />
+                        <Spinner
+                            android:id="@+id/value_gpio_mode_5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#7EC0EE"
+                            android:gravity="center_horizontal|center"
+                            android:inputType="none" />
+                        <Spinner
+                            android:id="@+id/value_gpio_mode_4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#7EC0EE"
+                            android:gravity="center_horizontal|center"
+                            android:inputType="none" />
+                        <TextView
+                            android:id="@+id/value_gpio_mode_3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textColor="#000000"
+                            android:gravity="center_horizontal|center" />
+                        <TextView
+                            android:id="@+id/value_gpio_mode_2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textColor="#000000"
+                            android:gravity="center_horizontal|center" />
+                        <TextView
+                            android:id="@+id/value_gpio_mode_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="0"
+                            android:textColor="#000000"
+                            android:gravity="center_horizontal|center" />
+                        <TextView
+                            android:id="@+id/value_gpio_mode_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="0"
+                            android:textColor="#000000"
+                            android:gravity="center_horizontal|center" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:text="GPIO值:" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="99">
+
+                        <Spinner
+                            android:id="@+id/value_gpio_value_7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#7EC0EE"
+                            android:gravity="center_horizontal|center"
+                            android:inputType="none" />
+
+                        <Spinner
+                            android:id="@+id/value_gpio_value_6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#7EC0EE"
+                            android:gravity="center_horizontal|center"
+                            android:inputType="none" />
+
+                        <Spinner
+                            android:id="@+id/value_gpio_value_5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#7EC0EE"
+                            android:gravity="center_horizontal|center"
+                            android:inputType="none" />
+
+                        <Spinner
+                            android:id="@+id/value_gpio_value_4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#7EC0EE"
+                            android:gravity="center_horizontal|center"
+                            android:inputType="none" />
+
+                        <Spinner
+                            android:id="@+id/value_gpio_value_3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#7EC0EE"
+                            android:gravity="center_horizontal|center"
+                            android:inputType="none" />
+
+                        <Spinner
+                            android:id="@+id/value_gpio_value_2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#7EC0EE"
+                            android:gravity="center_horizontal|center"
+                            android:inputType="none" />
+
+                        <TextView
+                            android:id="@+id/value_gpio_value_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|center"
+                            android:text="0"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/value_gpio_value_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|center"
+                            android:text="0"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/getModule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3a89d1"
+            android:text="获取通信配置参数"
+            android:textColor="#ffffff"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/setModule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:text="设置通信配置参数"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+</LinearLayout>
